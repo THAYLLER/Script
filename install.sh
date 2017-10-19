@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo o Atualizando repositórios..
 if ! apt update
 then
