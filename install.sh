@@ -53,9 +53,11 @@ echo "Modulos ativados"
 echo "#####################################################"
 
 echo 	"Instalando php 7"
+
 if !sudo apt install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php-memcached php7.0-dev php7.0-mcrypt php7.0-sqlite3 php7.0-mbstring
 then
 	echo "Não foi possível instalar o php7"
+	echo "nota: se estiver instalando o php no linux mint 19 alterar o script para sudo apt install php
 	exit 1
 fi
 echo "Instalação finalizada"
